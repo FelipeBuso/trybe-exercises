@@ -37,10 +37,11 @@
   }
 }
 
-.form {
+.sectionForm {
   width: 80%;
   margin: 0 auto;
   display: flex;
+  margin-bottom: 30px;
 }
 
 .personal-field {
