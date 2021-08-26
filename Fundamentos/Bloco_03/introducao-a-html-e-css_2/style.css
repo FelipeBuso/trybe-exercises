@@ -1,0 +1,27 @@
+h1{
+    font-family: sans-serif;
+    line-height: 0in;
+    text-decoration: rgb(225, 65, 78);
+  }
+  p {
+    font-weight: 600;
+    font-size: 3em;
+    font-style: oblique;
+  }
+  body {
+    font-size: 16px;
+    background: sandybrown;
+  }
+  ul{
+    text-align: center;
+    
+  }
+  #Amarelo{
+    background: yellow;
+  }
+  #Vermelho{
+    background: red;
+  }
+  #Marrom{
+    background: brown;
+  }

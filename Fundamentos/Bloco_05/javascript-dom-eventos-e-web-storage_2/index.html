@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body id="body">
+    <script>
+      let bodyDiv = document.querySelector('#body');
+      // console.log(bodyDiv);
+      let textH1 = 'Exercício 5.2 - JavaScript DOM';
+      let nodeH1 = document.createElement('h1');
+      nodeH1.className = 'title';
+      nodeH1.innerText = textH1;
+      bodyDiv.appendChild(nodeH1);
+
+      let divMainContent = document.createElement('div');
+      divMainContent.className = 'main-content';
+      bodyDiv.appendChild(divMainContent);
+
+      let childDivMainContent = document.querySelector('.main-content');
+      // console.log(childDivMainContent);
+      let divCenterContent = document.createElement('div');
+      divCenterContent.className = 'center-content';
+      divCenterContent.style.backgroundColor = 'green';
+      childDivMainContent.appendChild(divCenterContent);
+
+      let childDivCenteContent = document.querySelector('.main-content');
+      // console.log(childDivCenteContent);
+      let pText = document.createElement('p');
+      pText.id = 'text';
+      pText.innerText = 'Aprendendo a inserir html pelo js';
+      childDivCenteContent.appendChild(pText);
+
+      let childDivLeftContent = document.querySelector('.main-content');
+      let divLeftContent = document.createElement('div');
+      divLeftContent.className = 'left-content';
+      childDivLeftContent.appendChild(divLeftContent);
+
+      let childDivRightContent = document.querySelector('.main-content');
+      let divRightContent = document.createElement('div');
+      divRightContent.className = 'right-content';
+      divRightContent.style.marginRight = 'auto';
+      childDivMainContent.appendChild(divRightContent);
+
+      let childLeftContent = document.querySelector('.left-content');
+      // console.log(childLeftContent);
+      let imageSmallImage = document.createElement('img');
+      imageSmallImage.className = 'small-image';
+      imageSmallImage.src = 'https://picsum.photos/200'
+      childLeftContent.appendChild(imageSmallImage);
+
+      let ulListRightContent = document.querySelector('.right-content');
+      let ulList = document.createElement('ul');
+      ulList.id = 'list';
+      ulListRightContent.appendChild(ulList);
+
+      let ulContent = document.querySelector('ul');
+      for (let index = 0; index < 10; index += 1) {
+        let ulListItem = document.createElement('li');
+        ulListItem.id = 'item-list'
+        ulListItem.innerText = 'Item da lista ' + index;
+        ulContent.appendChild(ulListItem);
+      }
+
+      let divH3MainContent = document.querySelector('.main-content');
+      for (let index = 0; index < 3; index += 1) {
+        let divH3 = document.createElement('h3');
+        divH3.className = 'description';
+        divH3MainContent.appendChild(divH3);
+      }
+
+      let rmDivMainContent = document.querySelector('.main-content');
+      let rmLeftContent = document.querySelector('.left-content');
+      rmDivMainContent.removeChild(rmLeftContent);
+
+      let rmList = document.querySelector('#list');
+      let rmItemList = document.querySelectorAll('#item-list');
+      for (let index = 8; index <10; index += 1) {
+        rmItemListRemovable = rmItemList[index];
+        rmList.removeChild(rmItemListRemovable);
+      }
+
+
+
+
+      
+      
+
+    </script>
+  </body>
+</html>

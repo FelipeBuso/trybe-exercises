@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <h1>Currículo</h1>
+    </header>
+    <form action="" method="get">
+        <div class="form">
+            <fieldset class="field" id="personal">
+                <div class="inline-content">
+                    <label for="nome">Digite seu nome completo
+                        <input type="text" name="nome-completo" id="input-name" maxlength="40" required>
+                    </label>
+                </div>
+                <div class="inline-content">
+                    <label for="input-email">Digite seu email
+                        <input type="email" name="e-mail" id="input-email" required>
+                    </label>
+                </div>
+                <div class="inline-content">
+                    <label for="input-cpf">Digite seu CPF
+                        <input type="text" name="cpf" id="input-cpf" required>
+                    </label>
+                </div>
+                <div class="inline-content">
+                    <label for="input-adress">Digite seu endereço
+                        <input type="text" name="adress" id="input-adress" maxlength="200" required>
+                    </label>
+                </div>
+                <div class="inline-content">
+                    <label for="input-city">Digite sua cidade
+                        <input type="text" name="city" id="input-city" maxlength="28" required>
+                    </label>
+                </div>
+                <div class="inline-content">
+                    <label for="input-state">Selecione seu Estado
+                        <select name="state" id="input-state" required></select>
+                    </label>
+                </div>
+                <div class="radio">
+                    <fieldset id="habitat">
+                        <p>Qual seu tipo de moradia?</p>
+                        <input type="radio" name="home-type" id="input-home" value="casa" required>
+                        <label for="input-home">Casa</label>
+                        <br>
+                        <input type="radio" name="home-type" id="input-home" value="apartamento" required>
+                        <label for="input-home">Apartamento</label>
+                    </fieldset>
+                </div>
+            </fieldset>
+            <fieldset class="field" id="jobs">
+                <div class="inline-content">
+                    <label for="summary">Resumo do currículo
+                        <textarea name="resumo" id="summary" cols="30" rows="10" maxlength="1000" required></textarea>
+                    </label>
+                </div>
+                <div class="inline-content">
+                    <label for="office">Cargo
+                        <input type="text" name="cargo" id="office" maxlength="40" required>
+                    </label>
+                </div>
+                <div class="inline-content">
+                    <label for="summary-office">Descrição do cargo
+                        <input type="text" name="resumo-cargo" id="summary-office" maxlength="500" required>
+                    </label>
+                </div>
+                <div class="inline-content">
+                    <label for="summary-office">Data de inicio
+                        <input type="text" name="data-inicio" id="ini-date" placeholder="01/01/2000" required>
+                    </label>
+                </div>
+            </fieldset>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

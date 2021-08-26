@@ -1,0 +1,52 @@
+#header {
+  width: 720px;
+  margin-left: 20px;
+  text-align: center;
+  background-color: rgb(220, 220, 220);
+  padding: 3px 0px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+#habitat {
+  width: 90%;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: groove rgb(220, 220, 220)
+}
+
+.form {
+  width: 713px;
+  background-color: rgb(220, 220, 220);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border: 2px silver;
+  margin-left: 20px;
+  border-radius: 5px;
+  /* display: inline-block; */
+  }
+
+.inline-content input, textarea {
+  background-color: rgb(255, 255, 254);
+  width: 100%;
+  border: 1px cornflowerblue;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 3px;
+  margin-bottom: 10px;
+  resize: none;
+}
+
+.field {
+  border: ridge rgb(210, 210, 210);
+  border-radius: 5px;
+  display: inline-block;
+  width: 320px;
+  height: 400px
+  
+}
+
+#input-state {
+  border-radius: 5px;
+  background-color: rgb(240, 235, 235);
+  
+}
