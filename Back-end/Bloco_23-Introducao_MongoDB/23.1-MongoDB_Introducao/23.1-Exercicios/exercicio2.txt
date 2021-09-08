@@ -1,0 +1,7 @@
+sample> db.bios.find( { _id: 8 }, { _id: 1, name: 1 } )
+[
+  {
+    _id: 8,
+    name: { first: 'Yukihiro', aka: 'Matz', last: 'Matsumoto' }
+  }
+]

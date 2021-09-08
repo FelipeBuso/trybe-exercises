@@ -1,0 +1,8 @@
+sample> db.bios.find( { _id: 8 }, { _id: 0, name: 1, birth: 1 } )
+[
+  {
+    name: { first: 'Yukihiro', aka: 'Matz', last: 'Matsumoto' },
+    birth: ISODate("1965-04-14T04:00:00.000Z")
+  }
+]
+
