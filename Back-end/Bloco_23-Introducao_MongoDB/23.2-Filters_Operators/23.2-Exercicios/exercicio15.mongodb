@@ -1,0 +1,104 @@
+class> db.superheroes.find({ $and: [ {"aspects.weight": {$gte: 80}}, {"aspects.weight": {$lte: 100}}, {"race": {$in: ["Human", "Mutant"]}}, {"publisher": {$not: {$eq: "DC Comics"}}} ] })
+[
+  {
+    _id: ObjectId("613a841f069f4995ebdcb2e5"),
+    name: 'Beast',
+    alignment: 'good',
+    gender: 'Male',
+    race: 'Mutant',
+    aspects: {
+      eyeColor: 'blue',
+      hairColor: 'Blue',
+      skinColor: 'blue',
+      height: 180,
+      weight: 82.09
+    },
+    publisher: 'Marvel Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb378"),
+    name: 'Doctor Doom',
+    alignment: 'bad',
+    gender: 'Male',
+    race: 'Human',
+    aspects: {
+      eyeColor: 'brown',
+      hairColor: 'Brown',
+      height: 201,
+      weight: 84.81
+    },
+    publisher: 'Marvel Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb3f4"),
+    name: 'Iron Man',
+    alignment: 'good',
+    gender: 'Male',
+    race: 'Human',
+    aspects: {
+      eyeColor: 'blue',
+      hairColor: 'Black',
+      height: 198,
+      weight: 86.62
+    },
+    publisher: 'Marvel Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb422"),
+    name: 'Kingpin',
+    alignment: 'bad',
+    gender: 'Male',
+    race: 'Human',
+    aspects: {
+      eyeColor: 'blue',
+      hairColor: 'No Hair',
+      height: 201,
+      weight: 92.06
+    },
+    publisher: 'Marvel Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb43b"),
+    name: 'Luke Cage',
+    alignment: 'good',
+    gender: 'Male',
+    race: 'Human',
+    aspects: {
+      eyeColor: 'brown',
+      hairColor: 'Black',
+      height: 198,
+      weight: 86.62
+    },
+    publisher: 'Marvel Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb4d9"),
+    name: 'Sandman',
+    alignment: 'neutral',
+    gender: 'Male',
+    race: 'Human',
+    aspects: {
+      eyeColor: 'brown',
+      hairColor: 'Brown',
+      height: 185,
+      weight: 92.06
+    },
+    publisher: 'Marvel Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb537"),
+    name: 'Tiger Shark',
+    alignment: 'bad',
+    gender: 'Male',
+    race: 'Human',
+    aspects: {
+      eyeColor: 'grey',
+      hairColor: 'No Hair',
+      skinColor: 'grey',
+      height: 185,
+      weight: 92.06
+    },
+    publisher: 'Marvel Comics'
+  }
+]
+

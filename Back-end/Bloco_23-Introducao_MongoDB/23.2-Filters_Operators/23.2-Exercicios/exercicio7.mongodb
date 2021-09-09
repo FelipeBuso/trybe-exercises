@@ -1,0 +1,259 @@
+class> db.superheroes.find({"aspects.eyeColor": {$eq: "green"}})
+[
+  {
+    _id: ObjectId("613a841f069f4995ebdcb29e"),
+    name: 'Abomination',
+    alignment: 'bad',
+    gender: 'Male',
+    race: 'Human / Radiation',
+    aspects: {
+      eyeColor: 'green',
+      hairColor: 'No Hair',
+      height: 203,
+      weight: 200
+    },
+    publisher: 'Marvel Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb2b7"),
+    name: 'Annihilus',
+    alignment: 'bad',
+    gender: 'Male',
+    aspects: {
+      eyeColor: 'green',
+      hairColor: 'No Hair',
+      height: 180,
+      weight: 40.82
+    },
+    publisher: 'Marvel Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb2d7"),
+    name: 'Banshee',
+    alignment: 'good',
+    gender: 'Male',
+    race: 'Human',
+    aspects: {
+      eyeColor: 'green',
+      hairColor: 'Strawberry Blond',
+      height: 183,
+      weight: 34.92
+    },
+    publisher: 'Marvel Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb2da"),
+    name: 'Batgirl',
+    alignment: 'good',
+    gender: 'Female',
+    race: 'Human',
+    aspects: { eyeColor: 'green', hairColor: 'Red', height: 170, weight: 25.85 },
+    publisher: 'DC Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb2dc"),
+    name: 'Batgirl IV',
+    alignment: 'good',
+    gender: 'Female',
+    race: 'Human',
+    aspects: {
+      eyeColor: 'green',
+      hairColor: 'Black',
+      height: 165,
+      weight: 23.58
+    },
+    publisher: 'DC Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb2e3"),
+    name: 'Batwoman V',
+    alignment: 'good',
+    gender: 'Female',
+    race: 'Human',
+    aspects: { eyeColor: 'green', hairColor: 'Red', height: 178, weight: -44.9 },
+    publisher: 'DC Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb2e6"),
+    name: 'Beast Boy',
+    alignment: 'good',
+    gender: 'Male',
+    race: 'Human',
+    aspects: {
+      eyeColor: 'green',
+      hairColor: 'Green',
+      skinColor: 'green',
+      height: 173,
+      weight: 30.84
+    },
+    publisher: 'DC Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb2fd"),
+    name: 'Black Cat',
+    alignment: 'good',
+    gender: 'Female',
+    race: 'Human',
+    aspects: {
+      eyeColor: 'green',
+      hairColor: 'Blond',
+      height: 178,
+      weight: 24.49
+    },
+    publisher: 'Marvel Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb302"),
+    name: 'Black Mamba',
+    alignment: 'bad',
+    gender: 'Female',
+    aspects: {
+      eyeColor: 'green',
+      hairColor: 'Black',
+      height: 170,
+      weight: 23.58
+    },
+    publisher: 'Marvel Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb305"),
+    name: 'Black Widow',
+    alignment: 'good',
+    gender: 'Female',
+    race: 'Human',
+    aspects: {
+      eyeColor: 'green',
+      hairColor: 'Auburn',
+      height: 170,
+      weight: 26.76
+    },
+    publisher: 'Marvel Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb30d"),
+    name: 'Blink',
+    alignment: 'good',
+    gender: 'Female',
+    race: 'Mutant',
+    aspects: {
+      eyeColor: 'green',
+      hairColor: 'Magenta',
+      skinColor: 'pink',
+      height: 165,
+      weight: 25.4
+    },
+    publisher: 'Marvel Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb322"),
+    name: 'Brainiac',
+    alignment: 'bad',
+    gender: 'Male',
+    race: 'Android',
+    aspects: {
+      eyeColor: 'green',
+      hairColor: 'No Hair',
+      skinColor: 'green',
+      height: 198,
+      weight: 61.22
+    },
+    publisher: 'DC Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb323"),
+    name: 'Brainiac 5',
+    alignment: 'good',
+    gender: 'Male',
+    aspects: {
+      eyeColor: 'green',
+      hairColor: 'Blond',
+      height: 170,
+      weight: 27.66
+    },
+    publisher: 'DC Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb326"),
+    name: 'Buffy',
+    alignment: 'good',
+    gender: 'Female',
+    race: 'Human',
+    aspects: {
+      eyeColor: 'green',
+      hairColor: 'Blond',
+      height: 157,
+      weight: 23.58
+    },
+    publisher: 'Dark Horse Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb33c"),
+    name: 'Carnage',
+    alignment: 'bad',
+    gender: 'Male',
+    race: 'Symbiote',
+    aspects: { eyeColor: 'green', hairColor: 'Red', height: 185, weight: 39 },
+    publisher: 'Marvel Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb33f"),
+    name: 'Catwoman',
+    alignment: 'good',
+    gender: 'Female',
+    race: 'Human',
+    aspects: {
+      eyeColor: 'green',
+      hairColor: 'Black',
+      height: 175,
+      weight: 27.66
+    },
+    publisher: 'DC Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb346"),
+    name: 'Cheetah',
+    alignment: 'bad',
+    gender: 'Female',
+    race: 'Human',
+    aspects: {
+      eyeColor: 'green',
+      hairColor: 'Blond',
+      height: 163,
+      weight: 22.68
+    },
+    publisher: 'DC Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb347"),
+    name: 'Cheetah II',
+    alignment: 'bad',
+    gender: 'Female',
+    race: 'Human',
+    aspects: {
+      eyeColor: 'green',
+      hairColor: 'Brown',
+      height: 170,
+      weight: 24.94
+    },
+    publisher: 'DC Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb34b"),
+    name: 'Citizen Steel',
+    alignment: 'good',
+    gender: 'Male',
+    race: 'Human',
+    aspects: { eyeColor: 'green', hairColor: 'Red', height: 183, weight: 77.1 },
+    publisher: 'DC Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb359"),
+    name: 'Crystal',
+    alignment: 'good',
+    gender: 'Female',
+    race: 'Inhuman',
+    aspects: { eyeColor: 'green', hairColor: 'Red', height: 168, weight: 22.68 },
+    publisher: 'Marvel Comics'
+  }
+]
+

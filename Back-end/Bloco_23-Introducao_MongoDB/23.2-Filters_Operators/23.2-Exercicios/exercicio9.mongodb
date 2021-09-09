@@ -1,0 +1,276 @@
+class> db.superheroes.find({"aspects.hairColor": {$in: ["black", "No Hair"]}})
+[
+  {
+    _id: ObjectId("613a841f069f4995ebdcb29b"),
+    name: 'A-Bomb',
+    alignment: 'good',
+    gender: 'Male',
+    race: 'Human',
+    aspects: {
+      eyeColor: 'yellow',
+      hairColor: 'No Hair',
+      height: 203,
+      weight: 200
+    },
+    publisher: 'Marvel Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb29c"),
+    name: 'Abe Sapien',
+    alignment: 'good',
+    gender: 'Male',
+    race: 'Icthyo Sapien',
+    aspects: {
+      eyeColor: 'blue',
+      hairColor: 'No Hair',
+      skinColor: 'blue',
+      height: 191,
+      weight: 29.48
+    },
+    publisher: 'Dark Horse Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb29d"),
+    name: 'Abin Sur',
+    alignment: 'good',
+    gender: 'Male',
+    race: 'Ungaran',
+    aspects: {
+      eyeColor: 'blue',
+      hairColor: 'No Hair',
+      skinColor: 'red',
+      height: 185,
+      weight: 40.82
+    },
+    publisher: 'DC Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb29e"),
+    name: 'Abomination',
+    alignment: 'bad',
+    gender: 'Male',
+    race: 'Human / Radiation',
+    aspects: {
+      eyeColor: 'green',
+      hairColor: 'No Hair',
+      height: 203,
+      weight: 200
+    },
+    publisher: 'Marvel Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb2a0"),
+    name: 'Absorbing Man',
+    alignment: 'bad',
+    gender: 'Male',
+    race: 'Human',
+    aspects: {
+      eyeColor: 'blue',
+      hairColor: 'No Hair',
+      height: 193,
+      weight: 55.33
+    },
+    publisher: 'Marvel Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb2ac"),
+    name: 'Alien',
+    alignment: 'bad',
+    gender: 'Male',
+    race: 'Xenomorph XX121',
+    aspects: {
+      hairColor: 'No Hair',
+      skinColor: 'black',
+      height: 244,
+      weight: 76.64
+    },
+    publisher: 'Dark Horse Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb2b7"),
+    name: 'Annihilus',
+    alignment: 'bad',
+    gender: 'Male',
+    aspects: {
+      eyeColor: 'green',
+      hairColor: 'No Hair',
+      height: 180,
+      weight: 40.82
+    },
+    publisher: 'Marvel Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb2ba"),
+    name: 'Anti-Monitor',
+    alignment: 'bad',
+    gender: 'Male',
+    race: 'God / Eternal',
+    aspects: {
+      eyeColor: 'yellow',
+      hairColor: 'No Hair',
+      height: 61,
+      weight: -44.9
+    },
+    publisher: 'DC Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb2df"),
+    name: 'Batman',
+    alignment: 'good',
+    gender: 'Male',
+    race: 'Human',
+    aspects: {
+      eyeColor: 'blue',
+      hairColor: 'black',
+      height: 188,
+      weight: 43.08
+    },
+    publisher: 'DC Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb2e9"),
+    name: 'Beta Ray Bill',
+    alignment: 'good',
+    gender: 'Male',
+    aspects: { hairColor: 'No Hair', height: 201, weight: 97.96 },
+    publisher: 'Marvel Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb2f6"),
+    name: 'Bishop',
+    alignment: 'good',
+    gender: 'Male',
+    race: 'Mutant',
+    aspects: {
+      eyeColor: 'brown',
+      hairColor: 'No Hair',
+      height: 198,
+      weight: 56.24
+    },
+    publisher: 'Marvel Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb301"),
+    name: 'Black Lightning',
+    alignment: 'good',
+    gender: 'Male',
+    aspects: {
+      eyeColor: 'brown',
+      hairColor: 'No Hair',
+      height: 185,
+      weight: 40.82
+    },
+    publisher: 'DC Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb303"),
+    name: 'Black Manta',
+    alignment: 'bad',
+    gender: 'Male',
+    race: 'Human',
+    aspects: {
+      eyeColor: 'black',
+      hairColor: 'No Hair',
+      height: 188,
+      weight: 41.72
+    },
+    publisher: 'DC Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb30b"),
+    name: 'Blaquesmith',
+    alignment: 'good',
+    gender: '-',
+    aspects: {
+      eyeColor: 'black',
+      hairColor: 'No Hair',
+      height: -99,
+      weight: -44.9
+    },
+    publisher: 'Marvel Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb313"),
+    name: 'Bloodhawk',
+    alignment: 'good',
+    gender: 'Male',
+    race: 'Mutant',
+    aspects: {
+      eyeColor: 'black',
+      hairColor: 'No Hair',
+      height: -99,
+      weight: -44.9
+    },
+    publisher: 'Marvel Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb314"),
+    name: 'Bloodwraith',
+    alignment: 'bad',
+    gender: 'Male',
+    aspects: {
+      eyeColor: 'white',
+      hairColor: 'No Hair',
+      height: 30.5,
+      weight: -44.9
+    },
+    publisher: 'Marvel Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb322"),
+    name: 'Brainiac',
+    alignment: 'bad',
+    gender: 'Male',
+    race: 'Android',
+    aspects: {
+      eyeColor: 'green',
+      hairColor: 'No Hair',
+      skinColor: 'green',
+      height: 198,
+      weight: 61.22
+    },
+    publisher: 'DC Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb34e"),
+    name: 'Cloak',
+    alignment: 'good',
+    gender: 'Male',
+    aspects: {
+      eyeColor: 'brown',
+      hairColor: 'black',
+      height: 226,
+      weight: 31.75
+    },
+    publisher: 'Marvel Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb358"),
+    name: 'Crimson Dynamo',
+    alignment: 'good',
+    gender: 'Male',
+    aspects: {
+      eyeColor: 'brown',
+      hairColor: 'No Hair',
+      height: 180,
+      weight: 47.17
+    },
+    publisher: 'Marvel Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb366"),
+    name: 'Darkseid',
+    alignment: 'bad',
+    gender: 'Male',
+    race: 'New God',
+    aspects: {
+      eyeColor: 'red',
+      hairColor: 'No Hair',
+      skinColor: 'grey',
+      height: 267,
+      weight: 370.52
+    },
+    publisher: 'DC Comics'
+  }
+]
+

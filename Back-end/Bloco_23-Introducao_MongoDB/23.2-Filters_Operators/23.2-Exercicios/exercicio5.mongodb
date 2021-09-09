@@ -1,0 +1,269 @@
+class> db.superheroes.find({"aspects.height": {$gte: 200}})
+[
+  {
+    _id: ObjectId("613a841f069f4995ebdcb29b"),
+    name: 'A-Bomb',
+    alignment: 'good',
+    gender: 'Male',
+    race: 'Human',
+    aspects: {
+      eyeColor: 'yellow',
+      hairColor: 'No Hair',
+      height: 203,
+      weight: 200
+    },
+    publisher: 'Marvel Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb29e"),
+    name: 'Abomination',
+    alignment: 'bad',
+    gender: 'Male',
+    race: 'Human / Radiation',
+    aspects: {
+      eyeColor: 'green',
+      hairColor: 'No Hair',
+      height: 203,
+      weight: 200
+    },
+    publisher: 'Marvel Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb2ac"),
+    name: 'Alien',
+    alignment: 'bad',
+    gender: 'Male',
+    race: 'Xenomorph XX121',
+    aspects: {
+      hairColor: 'No Hair',
+      skinColor: 'black',
+      height: 244,
+      weight: 76.64
+    },
+    publisher: 'Dark Horse Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb2ae"),
+    name: 'Amazo',
+    alignment: 'bad',
+    gender: 'Male',
+    race: 'Android',
+    aspects: { eyeColor: 'red', height: 257, weight: 78.46 },
+    publisher: 'DC Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb2b8"),
+    name: 'Ant-Man',
+    alignment: 'good',
+    gender: 'Male',
+    race: 'Human',
+    aspects: {
+      eyeColor: 'blue',
+      hairColor: 'Blond',
+      height: 211,
+      weight: 55.33
+    },
+    publisher: 'Marvel Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb2bc"),
+    name: 'Anti-Venom',
+    alignment: '-',
+    gender: 'Male',
+    race: 'Symbiote',
+    aspects: {
+      eyeColor: 'blue',
+      hairColor: 'Blond',
+      height: 229,
+      weight: 162.36
+    },
+    publisher: 'Marvel Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb2bd"),
+    name: 'Apocalypse',
+    alignment: 'bad',
+    gender: 'Male',
+    race: 'Mutant',
+    aspects: {
+      eyeColor: 'red',
+      hairColor: 'Black',
+      skinColor: 'grey',
+      height: 213,
+      weight: 61.22
+    },
+    publisher: 'Marvel Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb2d6"),
+    name: 'Bane',
+    alignment: 'bad',
+    gender: 'Male',
+    race: 'Human',
+    aspects: { height: 203, weight: 81.63 },
+    publisher: 'DC Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb2e9"),
+    name: 'Beta Ray Bill',
+    alignment: 'good',
+    gender: 'Male',
+    aspects: { hairColor: 'No Hair', height: 201, weight: 97.96 },
+    publisher: 'Marvel Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb312"),
+    name: 'Bloodaxe',
+    alignment: 'bad',
+    gender: 'Female',
+    race: 'Human',
+    aspects: {
+      eyeColor: 'blue',
+      hairColor: 'Brown',
+      height: 218,
+      weight: 224.49
+    },
+    publisher: 'Marvel Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb32b"),
+    name: 'Cable',
+    alignment: 'good',
+    gender: 'Male',
+    race: 'Mutant',
+    aspects: {
+      eyeColor: 'blue',
+      hairColor: 'White',
+      height: 203,
+      weight: 71.66
+    },
+    publisher: 'Marvel Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb341"),
+    name: 'Century',
+    alignment: 'good',
+    gender: 'Male',
+    race: 'Alien',
+    aspects: {
+      eyeColor: 'white',
+      hairColor: 'White',
+      skinColor: 'grey',
+      height: 201,
+      weight: 43.99
+    },
+    publisher: 'Marvel Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb34e"),
+    name: 'Cloak',
+    alignment: 'good',
+    gender: 'Male',
+    aspects: {
+      eyeColor: 'brown',
+      hairColor: 'black',
+      height: 226,
+      weight: 31.75
+    },
+    publisher: 'Marvel Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb353"),
+    name: 'Colossus',
+    alignment: 'good',
+    gender: 'Male',
+    race: 'Mutant',
+    aspects: {
+      eyeColor: 'silver',
+      hairColor: 'Black',
+      height: 226,
+      weight: 102.04
+    },
+    publisher: 'Marvel Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb366"),
+    name: 'Darkseid',
+    alignment: 'bad',
+    gender: 'Male',
+    race: 'New God',
+    aspects: {
+      eyeColor: 'red',
+      hairColor: 'No Hair',
+      skinColor: 'grey',
+      height: 267,
+      weight: 370.52
+    },
+    publisher: 'DC Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb378"),
+    name: 'Doctor Doom',
+    alignment: 'bad',
+    gender: 'Male',
+    race: 'Human',
+    aspects: {
+      eyeColor: 'brown',
+      hairColor: 'Brown',
+      height: 201,
+      weight: 84.81
+    },
+    publisher: 'Marvel Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb379"),
+    name: 'Doctor Doom II',
+    alignment: 'bad',
+    gender: 'Male',
+    aspects: {
+      eyeColor: 'brown',
+      hairColor: 'Brown',
+      height: 201,
+      weight: 59.86
+    },
+    publisher: 'Marvel Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb380"),
+    name: 'Doomsday',
+    alignment: 'bad',
+    gender: 'Male',
+    race: 'Alien',
+    aspects: {
+      eyeColor: 'red',
+      hairColor: 'White',
+      height: 244,
+      weight: 186.85
+    },
+    publisher: 'DC Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb39a"),
+    name: 'Fin Fang Foom',
+    alignment: 'good',
+    gender: 'Male',
+    race: 'Kakarantharaian',
+    aspects: {
+      eyeColor: 'red',
+      hairColor: 'No Hair',
+      skinColor: 'green',
+      height: 975,
+      weight: 8.16
+    },
+    publisher: 'Marvel Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb3a9"),
+    name: 'Frenzy',
+    alignment: 'bad',
+    gender: 'Female',
+    aspects: {
+      eyeColor: 'brown',
+      hairColor: 'Black',
+      height: 211,
+      weight: 47.17
+    },
+    publisher: 'Marvel Comics'
+  }
+]
+

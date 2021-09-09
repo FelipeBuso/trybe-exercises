@@ -1,0 +1,238 @@
+class> db.superheroes.find({ $and: [{ "race": {$not: {$eq: "human"}}}, { "aspects.height": {$not: {$gt: 180}}} ] })
+[
+  {
+    _id: ObjectId("613a841f069f4995ebdcb29f"),
+    name: 'Abraxas',
+    alignment: 'bad',
+    gender: 'Male',
+    race: 'Cosmic Entity',
+    aspects: {
+      eyeColor: 'blue',
+      hairColor: 'Black',
+      height: -99,
+      weight: -44.9
+    },
+    publisher: 'Marvel Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb2a1"),
+    name: 'Adam Monroe',
+    alignment: 'good',
+    gender: 'Male',
+    aspects: {
+      eyeColor: 'blue',
+      hairColor: 'Blond',
+      height: -99,
+      weight: -44.9
+    },
+    publisher: 'NBC - Heroes'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb2a3"),
+    name: 'Agent 13',
+    alignment: 'good',
+    gender: 'Female',
+    aspects: {
+      eyeColor: 'blue',
+      hairColor: 'Blond',
+      height: 173,
+      weight: 27.66
+    },
+    publisher: 'Marvel Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb2a4"),
+    name: 'Agent Bob',
+    alignment: 'good',
+    gender: 'Male',
+    race: 'Human',
+    aspects: {
+      eyeColor: 'brown',
+      hairColor: 'Brown',
+      height: 178,
+      weight: 36.73
+    },
+    publisher: 'Marvel Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb2a8"),
+    name: 'Alan Scott',
+    alignment: 'good',
+    gender: 'Male',
+    aspects: {
+      eyeColor: 'blue',
+      hairColor: 'Blond',
+      height: 180,
+      weight: 40.82
+    },
+    publisher: 'DC Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb2a9"),
+    name: 'Alex Mercer',
+    alignment: 'bad',
+    gender: 'Male',
+    race: 'Human',
+    aspects: { height: -99, weight: -44.9 },
+    publisher: 'Wildstorm'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb2aa"),
+    name: 'Alex Woolsly',
+    alignment: 'good',
+    gender: 'Male',
+    aspects: { height: -99, weight: -44.9 },
+    publisher: 'NBC - Heroes'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb2ab"),
+    name: 'Alfred Pennyworth',
+    alignment: 'good',
+    gender: 'Male',
+    race: 'Human',
+    aspects: {
+      eyeColor: 'blue',
+      hairColor: 'Black',
+      height: 178,
+      weight: 32.65
+    },
+    publisher: 'DC Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb2ad"),
+    name: 'Allan Quatermain',
+    alignment: 'good',
+    gender: 'Male',
+    aspects: { height: -99, weight: -44.9 },
+    publisher: 'Wildstorm'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb2b0"),
+    name: 'Ando Masahashi',
+    alignment: 'good',
+    gender: 'Male',
+    aspects: { height: -99, weight: -44.9 },
+    publisher: 'NBC - Heroes'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb2b2"),
+    name: 'Angel',
+    alignment: 'good',
+    gender: 'Male',
+    race: 'Vampire',
+    aspects: { height: -99, weight: -44.9 },
+    publisher: 'Dark Horse Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb2b3"),
+    name: 'Angel Dust',
+    alignment: 'good',
+    gender: 'Female',
+    race: 'Mutant',
+    aspects: {
+      eyeColor: 'yellow',
+      hairColor: 'Black',
+      height: 165,
+      weight: 25.85
+    },
+    publisher: 'Marvel Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb2b4"),
+    name: 'Angel Salvadore',
+    alignment: 'good',
+    gender: 'Female',
+    aspects: {
+      eyeColor: 'brown',
+      hairColor: 'Black',
+      height: 163,
+      weight: 24.49
+    },
+    publisher: 'Marvel Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb2b5"),
+    name: 'Angela',
+    alignment: 'bad',
+    gender: 'Female',
+    aspects: { height: -99, weight: -44.9 },
+    publisher: 'Image Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb2b7"),
+    name: 'Annihilus',
+    alignment: 'bad',
+    gender: 'Male',
+    aspects: {
+      eyeColor: 'green',
+      hairColor: 'No Hair',
+      height: 180,
+      weight: 40.82
+    },
+    publisher: 'Marvel Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb2ba"),
+    name: 'Anti-Monitor',
+    alignment: 'bad',
+    gender: 'Male',
+    race: 'God / Eternal',
+    aspects: {
+      eyeColor: 'yellow',
+      hairColor: 'No Hair',
+      height: 61,
+      weight: -44.9
+    },
+    publisher: 'DC Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb2bb"),
+    name: 'Anti-Spawn',
+    alignment: 'bad',
+    gender: 'Male',
+    aspects: { height: -99, weight: -44.9 },
+    publisher: 'Image Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb2be"),
+    name: 'Aquababy',
+    alignment: 'good',
+    gender: 'Male',
+    aspects: {
+      eyeColor: 'blue',
+      hairColor: 'Blond',
+      height: -99,
+      weight: -44.9
+    },
+    publisher: 'DC Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb2bf"),
+    name: 'Aqualad',
+    alignment: 'good',
+    gender: 'Male',
+    race: 'Atlantean',
+    aspects: {
+      eyeColor: 'blue',
+      hairColor: 'Black',
+      height: 178,
+      weight: 48.07
+    },
+    publisher: 'DC Comics'
+  },
+  {
+    _id: ObjectId("613a841f069f4995ebdcb2c1"),
+    name: 'Arachne',
+    alignment: 'good',
+    gender: 'Female',
+    race: 'Human',
+    aspects: {
+      eyeColor: 'blue',
+      hairColor: 'Blond',
+      height: 175,
+      weight: 28.57
+    },
+    publisher: 'Marvel Comics'
+  }
+]
+
