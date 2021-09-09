@@ -1,0 +1,7 @@
+business> db.restaurants.deleteMany( { "cuisine": { $eq: "American"} } );
+{ acknowledged: true, deletedCount: 20 }
+business> db.restaurants.find( { "cuisine": { $eq: "American"} } );
+
+business> db.restaurants.find( { "cuisine": { $eq: "American"} } ).count();
+0
+

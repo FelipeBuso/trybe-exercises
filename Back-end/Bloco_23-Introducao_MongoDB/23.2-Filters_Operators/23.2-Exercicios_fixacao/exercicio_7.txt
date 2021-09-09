@@ -1,0 +1,3 @@
+business> db.restaurants.find({ $or: [ { "rating":  { $gte: 6 } },  {"borough": {$eq: "Brooklyn"} } ] } ).count();
+39
+

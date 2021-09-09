@@ -1,0 +1,5 @@
+business> db.restaurants.count( { "cuisine": { $nin: ["American"] } });
+40
+business> db.restaurants.count( { "cuisine": { $ne: "American" } });
+40
+

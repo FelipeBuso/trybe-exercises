@@ -1,0 +1,185 @@
+business> db.restaurants.find( { "cuisine": { $eq: "Ice Cream, Gelato, Yogurt, Ices"} } );
+[
+  {
+    _id: ObjectId("613a5083cabd554410a9f94d"),
+    rating: 2.2,
+    address: {
+      building: '1839',
+      coord: [ -73.9482609, 40.6408271 ],
+      street: 'Nostrand Avenue',
+      zipcode: '11226'
+    },
+    borough: 'Brooklyn',
+    cuisine: 'Ice Cream, Gelato, Yogurt, Ices',
+    grades: [
+      { date: { '$date': 1405296000000 }, grade: 'A', score: 12 },
+      { date: { '$date': 1373414400000 }, grade: 'A', score: 8 },
+      { date: { '$date': 1341964800000 }, grade: 'A', score: 5 },
+      { date: { '$date': 1329955200000 }, grade: 'A', score: 8 }
+    ],
+    name: 'Taste The Tropics Ice Cream',
+    restaurant_id: '40356731'
+  },
+  {
+    _id: ObjectId("613a5083cabd554410a9f953"),
+    address: {
+      building: '203',
+      coord: [ -73.97822040000001, 40.6435254 ],
+      street: 'Church Avenue',
+      zipcode: '11218'
+    },
+    borough: 'Brooklyn',
+    cuisine: 'Ice Cream, Gelato, Yogurt, Ices',
+    grades: [
+      { date: { '$date': 1391990400000 }, grade: 'A', score: 2 },
+      { date: { '$date': 1357084800000 }, grade: 'A', score: 13 },
+      { date: { '$date': 1326067200000 }, grade: 'A', score: 3 },
+      { date: { '$date': 1320624000000 }, grade: 'P', score: 12 },
+      { date: { '$date': 1311206400000 }, grade: 'A', score: 13 }
+    ],
+    name: 'Carvel Ice Cream',
+    restaurant_id: '40360076'
+  },
+  {
+    _id: ObjectId("613a5083cabd554410a9f954"),
+    rating: 4,
+    address: {
+      building: '265-15',
+      coord: [ -73.7032601, 40.7386417 ],
+      street: 'Hillside Avenue',
+      zipcode: '11004'
+    },
+    borough: 'Queens',
+    cuisine: 'Ice Cream, Gelato, Yogurt, Ices',
+    grades: [
+      { date: { '$date': 1414454400000 }, grade: 'A', score: 9 },
+      { date: { '$date': 1379462400000 }, grade: 'A', score: 10 },
+      { date: { '$date': 1348099200000 }, grade: 'A', score: 13 }
+    ],
+    name: 'Carvel Ice Cream',
+    restaurant_id: '40361322'
+  },
+  {
+    _id: ObjectId("613a5083cabd554410a9f963"),
+    rating: 5,
+    address: {
+      building: '1006',
+      coord: [ -73.84856870000002, 40.8903781 ],
+      street: 'East 233 Street',
+      zipcode: '10466'
+    },
+    borough: 'Bronx',
+    cuisine: 'Ice Cream, Gelato, Yogurt, Ices',
+    grades: [
+      { date: { '$date': 1398297600000 }, grade: 'A', score: 10 },
+      { date: { '$date': 1378339200000 }, grade: 'A', score: 10 },
+      { date: { '$date': 1361404800000 }, grade: 'A', score: 9 },
+      { date: { '$date': 1341273600000 }, grade: 'A', score: 11 },
+      { date: { '$date': 1310342400000 }, grade: 'A', score: 5 }
+    ],
+    name: 'Carvel Ice Cream',
+    restaurant_id: '40363093'
+  },
+  {
+    _id: ObjectId("613a5083cabd554410a9f972"),
+    address: {
+      building: '1111',
+      coord: [ -74.0796436, 40.59878339999999 ],
+      street: 'Hylan Boulevard',
+      zipcode: '10305'
+    },
+    borough: 'Staten Island',
+    cuisine: 'Ice Cream, Gelato, Yogurt, Ices',
+    grades: [
+      { date: { '$date': 1398297600000 }, grade: 'A', score: 12 },
+      { date: { '$date': 1361836800000 }, grade: 'A', score: 5 },
+      { date: { '$date': 1328140800000 }, grade: 'A', score: 2 }
+    ],
+    name: 'Carvel Ice Cream',
+    restaurant_id: '40363834'
+  }
+]
+business> db.restaurants.deleteOne( { "cuisine": { $eq: "Ice Cream, Gelato, Yogurt, Ices"} } );
+{ acknowledged: true, deletedCount: 1 }
+business> db.restaurants.find( { "cuisine": { $eq: "Ice Cream, Gelato, Yogurt, Ices"} } );
+[
+  {
+    _id: ObjectId("613a5083cabd554410a9f953"),
+    address: {
+      building: '203',
+      coord: [ -73.97822040000001, 40.6435254 ],
+      street: 'Church Avenue',
+      zipcode: '11218'
+    },
+    borough: 'Brooklyn',
+    cuisine: 'Ice Cream, Gelato, Yogurt, Ices',
+    grades: [
+      { date: { '$date': 1391990400000 }, grade: 'A', score: 2 },
+      { date: { '$date': 1357084800000 }, grade: 'A', score: 13 },
+      { date: { '$date': 1326067200000 }, grade: 'A', score: 3 },
+      { date: { '$date': 1320624000000 }, grade: 'P', score: 12 },
+      { date: { '$date': 1311206400000 }, grade: 'A', score: 13 }
+    ],
+    name: 'Carvel Ice Cream',
+    restaurant_id: '40360076'
+  },
+  {
+    _id: ObjectId("613a5083cabd554410a9f954"),
+    rating: 4,
+    address: {
+      building: '265-15',
+      coord: [ -73.7032601, 40.7386417 ],
+      street: 'Hillside Avenue',
+      zipcode: '11004'
+    },
+    borough: 'Queens',
+    cuisine: 'Ice Cream, Gelato, Yogurt, Ices',
+    grades: [
+      { date: { '$date': 1414454400000 }, grade: 'A', score: 9 },
+      { date: { '$date': 1379462400000 }, grade: 'A', score: 10 },
+      { date: { '$date': 1348099200000 }, grade: 'A', score: 13 }
+    ],
+    name: 'Carvel Ice Cream',
+    restaurant_id: '40361322'
+  },
+  {
+    _id: ObjectId("613a5083cabd554410a9f963"),
+    rating: 5,
+    address: {
+      building: '1006',
+      coord: [ -73.84856870000002, 40.8903781 ],
+      street: 'East 233 Street',
+      zipcode: '10466'
+    },
+    borough: 'Bronx',
+    cuisine: 'Ice Cream, Gelato, Yogurt, Ices',
+    grades: [
+      { date: { '$date': 1398297600000 }, grade: 'A', score: 10 },
+      { date: { '$date': 1378339200000 }, grade: 'A', score: 10 },
+      { date: { '$date': 1361404800000 }, grade: 'A', score: 9 },
+      { date: { '$date': 1341273600000 }, grade: 'A', score: 11 },
+      { date: { '$date': 1310342400000 }, grade: 'A', score: 5 }
+    ],
+    name: 'Carvel Ice Cream',
+    restaurant_id: '40363093'
+  },
+  {
+    _id: ObjectId("613a5083cabd554410a9f972"),
+    address: {
+      building: '1111',
+      coord: [ -74.0796436, 40.59878339999999 ],
+      street: 'Hylan Boulevard',
+      zipcode: '10305'
+    },
+    borough: 'Staten Island',
+    cuisine: 'Ice Cream, Gelato, Yogurt, Ices',
+    grades: [
+      { date: { '$date': 1398297600000 }, grade: 'A', score: 12 },
+      { date: { '$date': 1361836800000 }, grade: 'A', score: 5 },
+      { date: { '$date': 1328140800000 }, grade: 'A', score: 2 }
+    ],
+    name: 'Carvel Ice Cream',
+    restaurant_id: '40363834'
+  }
+]
+

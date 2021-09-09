@@ -1,0 +1,410 @@
+business> db.restaurants.find().sort({"name": 1}).pretty();
+[
+  {
+    _id: ObjectId("613a5083cabd554410a9f951"),
+    rating: 9.9,
+    address: {
+      building: '1',
+      coord: [ -73.96926909999999, 40.7685235 ],
+      street: 'East   66 Street',
+      zipcode: '10065'
+    },
+    borough: 'Manhattan',
+    cuisine: 'American',
+    grades: [
+      { date: { '$date': 1399420800000 }, grade: 'A', score: 3 },
+      { date: { '$date': 1367539200000 }, grade: 'A', score: 4 },
+      { date: { '$date': 1335744000000 }, grade: 'A', score: 6 },
+      { date: { '$date': 1324944000000 }, grade: 'A', score: 0 }
+    ],
+    name: '1 East 66Th Street Kitchen',
+    restaurant_id: '40359480'
+  },
+  {
+    _id: ObjectId("613a5083cabd554410a9f95d"),
+    rating: 4,
+    address: {
+      building: '18',
+      coord: [ -73.996984, 40.72589 ],
+      street: 'West Houston Street',
+      zipcode: '10012'
+    },
+    borough: 'Manhattan',
+    cuisine: 'American',
+    grades: [
+      { date: { '$date': 1396483200000 }, grade: 'A', score: 9 },
+      { date: { '$date': 1365120000000 }, grade: 'A', score: 4 },
+      { date: { '$date': 1332288000000 }, grade: 'A', score: 13 },
+      { date: { '$date': 1303862400000 }, grade: 'A', score: 5 }
+    ],
+    name: 'Angelika Film Center',
+    restaurant_id: '40362274'
+  },
+  {
+    _id: ObjectId("613a5083cabd554410a9f97a"),
+    rating: 3.6,
+    address: {
+      building: '203',
+      coord: [ -74.15235919999999, 40.5563756 ],
+      street: 'Giffords Lane',
+      zipcode: '10308'
+    },
+    borough: 'Staten Island',
+    cuisine: 'Delicatessen',
+    grades: [
+      { date: { '$date': 1420416000000 }, grade: 'A', score: 4 },
+      { date: { '$date': 1410393600000 }, grade: 'C', score: 39 },
+      { date: { '$date': 1395273600000 }, grade: 'A', score: 12 },
+      { date: { '$date': 1358985600000 }, grade: 'A', score: 13 },
+      { date: { '$date': 1337731200000 }, grade: 'A', score: 10 }
+    ],
+    name: 'B & M Hot Bagel & Grocery',
+    restaurant_id: '40364299'
+  },
+  {
+    _id: ObjectId("613a5083cabd554410a9f96b"),
+    rating: 7.3,
+    address: {
+      building: '2491',
+      coord: [ -74.1459332, 40.6103714 ],
+      street: 'Victory Boulevard',
+      zipcode: '10314'
+    },
+    borough: 'Staten Island',
+    cuisine: 'Delicatessen',
+    grades: [
+      { date: { '$date': 1420761600000 }, grade: 'A', score: 3 },
+      { date: { '$date': 1386201600000 }, grade: 'A', score: 10 },
+      { date: { '$date': 1371600000000 }, grade: 'A', score: 10 },
+      { date: { '$date': 1357603200000 }, grade: 'A', score: 11 }
+    ],
+    name: 'Bagels N Buns',
+    restaurant_id: '40363427'
+  },
+  {
+    _id: ObjectId("613a5083cabd554410a9f970"),
+    rating: 9,
+    address: {
+      building: '437',
+      coord: [ -73.975393, 40.757365 ],
+      street: 'Madison Avenue',
+      zipcode: '10022'
+    },
+    borough: 'Manhattan',
+    cuisine: 'American',
+    grades: [
+      { date: { '$date': 1401753600000 }, grade: 'A', score: 9 },
+      { date: { '$date': 1370563200000 }, grade: 'A', score: 5 },
+      { date: { '$date': 1340928000000 }, grade: 'A', score: 12 },
+      { date: { '$date': 1328486400000 }, grade: 'A', score: 11 },
+      { date: { '$date': 1308787200000 }, grade: 'A', score: 13 }
+    ],
+    name: 'Berkely',
+    restaurant_id: '40363685'
+  },
+  {
+    _id: ObjectId("613a5083cabd554410a9f949"),
+    rating: 9.6,
+    address: {
+      building: '8825',
+      coord: [ -73.8803827, 40.7643124 ],
+      street: 'Astoria Boulevard',
+      zipcode: '11369'
+    },
+    borough: 'Queens',
+    cuisine: 'American',
+    grades: [
+      { date: { '$date': 1416009600000 }, grade: 'Z', score: 38 },
+      { date: { '$date': 1398988800000 }, grade: 'A', score: 10 },
+      { date: { '$date': 1362182400000 }, grade: 'A', score: 7 },
+      { date: { '$date': 1328832000000 }, grade: 'A', score: 13 }
+    ],
+    name: 'Brunos On The Boulevard',
+    restaurant_id: '40356151'
+  },
+  {
+    _id: ObjectId("613a5083cabd554410a9f959"),
+    rating: 8.7,
+    address: {
+      building: '759',
+      coord: [ -73.9925306, 40.7309346 ],
+      street: 'Broadway',
+      zipcode: '10003'
+    },
+    borough: 'Manhattan',
+    cuisine: 'Delicatessen',
+    grades: [
+      { date: { '$date': 1390262400000 }, grade: 'A', score: 12 },
+      { date: { '$date': 1357257600000 }, grade: 'A', score: 11 },
+      { date: { '$date': 1339027200000 }, grade: 'A', score: 6 },
+      { date: { '$date': 1326758400000 }, grade: 'A', score: 8 }
+    ],
+    name: "Bully'S Deli",
+    restaurant_id: '40361708'
+  },
+  {
+    _id: ObjectId("613a5083cabd554410a9f94f"),
+    rating: 10,
+    address: {
+      building: '7715',
+      coord: [ -73.9973325, 40.61174889999999 ],
+      street: '18 Avenue',
+      zipcode: '11214'
+    },
+    borough: 'Brooklyn',
+    cuisine: 'American',
+    grades: [
+      { date: { '$date': 1397606400000 }, grade: 'A', score: 5 },
+      { date: { '$date': 1366675200000 }, grade: 'A', score: 2 },
+      { date: { '$date': 1335225600000 }, grade: 'A', score: 5 },
+      { date: { '$date': 1323993600000 }, grade: 'A', score: 2 }
+    ],
+    name: 'C & C Catering Service',
+    restaurant_id: '40357437'
+  },
+  {
+    _id: ObjectId("613a5083cabd554410a9f968"),
+    rating: 3.6,
+    address: {
+      building: '625',
+      coord: [ -73.990494, 40.7569545 ],
+      street: '8 Avenue',
+      zipcode: '10018'
+    },
+    borough: 'Manhattan',
+    cuisine: 'American',
+    grades: [
+      { date: { '$date': 1402272000000 }, grade: 'A', score: 12 },
+      { date: { '$date': 1389312000000 }, grade: 'A', score: 9 },
+      { date: { '$date': 1354838400000 }, grade: 'A', score: 4 },
+      { date: { '$date': 1323734400000 }, grade: 'A', score: 9 },
+      { date: { '$date': 1315526400000 }, grade: 'A', score: 13 }
+    ],
+    name: 'Cafe Metro',
+    restaurant_id: '40363298'
+  },
+  {
+    _id: ObjectId("613a5083cabd554410a9f953"),
+    address: {
+      building: '203',
+      coord: [ -73.97822040000001, 40.6435254 ],
+      street: 'Church Avenue',
+      zipcode: '11218'
+    },
+    borough: 'Brooklyn',
+    cuisine: 'Ice Cream, Gelato, Yogurt, Ices',
+    grades: [
+      { date: { '$date': 1391990400000 }, grade: 'A', score: 2 },
+      { date: { '$date': 1357084800000 }, grade: 'A', score: 13 },
+      { date: { '$date': 1326067200000 }, grade: 'A', score: 3 },
+      { date: { '$date': 1320624000000 }, grade: 'P', score: 12 },
+      { date: { '$date': 1311206400000 }, grade: 'A', score: 13 }
+    ],
+    name: 'Carvel Ice Cream',
+    restaurant_id: '40360076'
+  },
+  {
+    _id: ObjectId("613a5083cabd554410a9f954"),
+    rating: 4,
+    address: {
+      building: '265-15',
+      coord: [ -73.7032601, 40.7386417 ],
+      street: 'Hillside Avenue',
+      zipcode: '11004'
+    },
+    borough: 'Queens',
+    cuisine: 'Ice Cream, Gelato, Yogurt, Ices',
+    grades: [
+      { date: { '$date': 1414454400000 }, grade: 'A', score: 9 },
+      { date: { '$date': 1379462400000 }, grade: 'A', score: 10 },
+      { date: { '$date': 1348099200000 }, grade: 'A', score: 13 }
+    ],
+    name: 'Carvel Ice Cream',
+    restaurant_id: '40361322'
+  },
+  {
+    _id: ObjectId("613a5083cabd554410a9f963"),
+    rating: 5,
+    address: {
+      building: '1006',
+      coord: [ -73.84856870000002, 40.8903781 ],
+      street: 'East 233 Street',
+      zipcode: '10466'
+    },
+    borough: 'Bronx',
+    cuisine: 'Ice Cream, Gelato, Yogurt, Ices',
+    grades: [
+      { date: { '$date': 1398297600000 }, grade: 'A', score: 10 },
+      { date: { '$date': 1378339200000 }, grade: 'A', score: 10 },
+      { date: { '$date': 1361404800000 }, grade: 'A', score: 9 },
+      { date: { '$date': 1341273600000 }, grade: 'A', score: 11 },
+      { date: { '$date': 1310342400000 }, grade: 'A', score: 5 }
+    ],
+    name: 'Carvel Ice Cream',
+    restaurant_id: '40363093'
+  },
+  {
+    _id: ObjectId("613a5083cabd554410a9f972"),
+    address: {
+      building: '1111',
+      coord: [ -74.0796436, 40.59878339999999 ],
+      street: 'Hylan Boulevard',
+      zipcode: '10305'
+    },
+    borough: 'Staten Island',
+    cuisine: 'Ice Cream, Gelato, Yogurt, Ices',
+    grades: [
+      { date: { '$date': 1398297600000 }, grade: 'A', score: 12 },
+      { date: { '$date': 1361836800000 }, grade: 'A', score: 5 },
+      { date: { '$date': 1328140800000 }, grade: 'A', score: 2 }
+    ],
+    name: 'Carvel Ice Cream',
+    restaurant_id: '40363834'
+  },
+  {
+    _id: ObjectId("613a5083cabd554410a9f946"),
+    rating: 8,
+    address: {
+      building: '351',
+      coord: [ -73.98513559999999, 40.7676919 ],
+      street: 'West   57 Street',
+      zipcode: '10019'
+    },
+    borough: 'Manhattan',
+    cuisine: 'Irish',
+    grades: [
+      { date: { '$date': 1409961600000 }, grade: 'A', score: 2 },
+      { date: { '$date': 1374451200000 }, grade: 'A', score: 11 },
+      { date: { '$date': 1343692800000 }, grade: 'A', score: 12 },
+      { date: { '$date': 1325116800000 }, grade: 'A', score: 12 }
+    ],
+    name: 'Dj Reynolds Pub And Restaurant',
+    restaurant_id: '30191841'
+  },
+  {
+    _id: ObjectId("613a5083cabd554410a9f96f"),
+    rating: 7.6,
+    address: {
+      building: '464',
+      coord: [ -73.9791458, 40.744328 ],
+      street: '3 Avenue',
+      zipcode: '10016'
+    },
+    borough: 'Manhattan',
+    cuisine: 'Pizza',
+    grades: [
+      { date: { '$date': 1407196800000 }, grade: 'A', score: 3 },
+      { date: { '$date': 1394064000000 }, grade: 'A', score: 11 },
+      { date: { '$date': 1373328000000 }, grade: 'A', score: 12 },
+      { date: { '$date': 1359504000000 }, grade: 'A', score: 4 },
+      { date: { '$date': 1325721600000 }, grade: 'A', score: 2 },
+      { date: { '$date': 1316995200000 }, grade: 'A', score: 0 }
+    ],
+    name: "Domino'S Pizza",
+    restaurant_id: '40363644'
+  },
+  {
+    _id: ObjectId("613a5083cabd554410a9f974"),
+    rating: 6.5,
+    address: {
+      building: '148',
+      coord: [ -73.9806854, 40.7778589 ],
+      street: 'West   72 Street',
+      zipcode: '10023'
+    },
+    borough: 'Manhattan',
+    cuisine: 'Pizza',
+    grades: [
+      { date: { '$date': 1417996800000 }, grade: 'A', score: 13 },
+      { date: { '$date': 1399248000000 }, grade: 'B', score: 18 },
+      { date: { '$date': 1365120000000 }, grade: 'A', score: 13 },
+      { date: { '$date': 1333065600000 }, grade: 'A', score: 9 }
+    ],
+    name: "Domino'S Pizza",
+    restaurant_id: '40363945'
+  },
+  {
+    _id: ObjectId("613a5083cabd554410a9f962"),
+    rating: 5.5,
+    address: {
+      building: '107',
+      coord: [ -74.00920839999999, 40.7132925 ],
+      street: 'Church Street',
+      zipcode: '10007'
+    },
+    borough: 'Manhattan',
+    cuisine: 'American',
+    grades: [
+      { date: { '$date': 1405641600000 }, grade: 'A', score: 12 },
+      { date: { '$date': 1393372800000 }, grade: 'A', score: 9 },
+      { date: { '$date': 1377475200000 }, grade: 'A', score: 9 },
+      { date: { '$date': 1359676800000 }, grade: 'A', score: 12 },
+      { date: { '$date': 1326758400000 }, grade: 'A', score: 13 },
+      { date: { '$date': 1318896000000 }, grade: 'A', score: 11 }
+    ],
+    name: 'Downtown Deli',
+    restaurant_id: '40363021'
+  },
+  {
+    _id: ObjectId("613a5083cabd554410a9f964"),
+    rating: 5.4,
+    address: {
+      building: '56',
+      coord: [ -73.991495, 40.692273 ],
+      street: 'Court Street',
+      zipcode: '11201'
+    },
+    borough: 'Brooklyn',
+    cuisine: 'Donuts',
+    grades: [
+      { date: { '$date': 1419897600000 }, grade: 'A', score: 8 },
+      { date: { '$date': 1389744000000 }, grade: 'A', score: 9 },
+      { date: { '$date': 1357603200000 }, grade: 'A', score: 11 },
+      { date: { '$date': 1326931200000 }, grade: 'A', score: 10 }
+    ],
+    name: "Dunkin' Donuts",
+    restaurant_id: '40363098'
+  },
+  {
+    _id: ObjectId("613a5083cabd554410a9f956"),
+    rating: 6.5,
+    address: {
+      building: '522',
+      coord: [ -73.95171, 40.767461 ],
+      street: 'East   74 Street',
+      zipcode: '10021'
+    },
+    borough: 'Manhattan',
+    cuisine: 'American',
+    grades: [
+      { date: { '$date': 1409616000000 }, grade: 'A', score: 12 },
+      { date: { '$date': 1387411200000 }, grade: 'B', score: 16 },
+      { date: { '$date': 1369699200000 }, grade: 'A', score: 9 },
+      { date: { '$date': 1354838400000 }, grade: 'A', score: 13 },
+      { date: { '$date': 1332979200000 }, grade: 'A', score: 11 }
+    ],
+    name: 'Glorious Food',
+    restaurant_id: '40361521'
+  },
+  {
+    _id: ObjectId("613a5083cabd554410a9f973"),
+    rating: 7.4,
+    address: {
+      building: '976',
+      coord: [ -73.92701509999999, 40.6620192 ],
+      street: 'Rutland Road',
+      zipcode: '11212'
+    },
+    borough: 'Brooklyn',
+    cuisine: 'Chinese',
+    grades: [
+      { date: { '$date': 1398211200000 }, grade: 'A', score: 13 },
+      { date: { '$date': 1364256000000 }, grade: 'A', score: 10 },
+      { date: { '$date': 1331596800000 }, grade: 'A', score: 4 },
+      { date: { '$date': 1321401600000 }, grade: 'A', score: 13 }
+    ],
+    name: 'Golden Pavillion',
+    restaurant_id: '40363920'
+  }
+]
+
