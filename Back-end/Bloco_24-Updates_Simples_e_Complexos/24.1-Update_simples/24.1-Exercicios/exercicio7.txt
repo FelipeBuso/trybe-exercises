@@ -1,0 +1,33 @@
+class> db.movies.updateMany({ title: "Batman" }, { $rename: { budget: "estimatedBudget" } }); 
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+class> db.movies.find();
+[
+  {
+    _id: ObjectId("613fbf14a1d10451eab908ac"),
+    title: 'Batman',
+    category: [ 'action', 'adventure' ],
+    imdbRating: 9.7,
+    estimatedBudget: 140
+  },
+  {
+    _id: ObjectId("613fbf14a1d10451eab908ad"),
+    title: 'Godzilla',
+    category: [ 'action', 'adventure', 'sci-fi' ],
+    imdbRating: 6.6,
+    budget: 1
+  },
+  {
+    _id: ObjectId("613fbf14a1d10451eab908ae"),
+    title: 'Home Alone',
+    category: [ 'family', 'comedy' ],
+    imdbRating: 5.5,
+    budget: 20
+  }
+]
+
