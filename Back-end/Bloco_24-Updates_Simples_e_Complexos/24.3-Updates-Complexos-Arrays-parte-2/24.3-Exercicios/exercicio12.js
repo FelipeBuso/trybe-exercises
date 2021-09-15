@@ -1,0 +1,6 @@
+db.movies.find(
+  { 
+    category: { $size: 2},
+    budget: { $mod: [5, 0] },
+  }
+);
