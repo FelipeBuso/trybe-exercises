@@ -1,0 +1,10 @@
+db.products.aggregate([
+  { 
+    $project: { 
+      name: 1,
+      promoção: {
+        $divide: ["$sale_price", 2]
+      },
+    } 
+  }
+]);
