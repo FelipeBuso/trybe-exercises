@@ -1,0 +1,17 @@
+db.clientes.aggregate([
+  {
+    $lookup: {
+      from: "vendas",
+      let: { id: "$clienteId" },
+      pipeline: [
+        {
+          $match: {
+            $expr: { $eq: ["$clienteId", "$$id"]}
+          }
+        },
+        { $project: { _id: 0 } },
+      ],
+      as: "compras"
+    }
+  }
+]);
