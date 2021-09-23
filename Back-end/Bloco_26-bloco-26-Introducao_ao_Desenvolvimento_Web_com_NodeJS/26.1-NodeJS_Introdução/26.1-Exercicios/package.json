@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "sorteio": "node sorteio.js",
     "imc": "node imc.js",
     "velocidade": "node velocidade.js",
     "test": "echo \"Error: no test specified\" && exit 1"
