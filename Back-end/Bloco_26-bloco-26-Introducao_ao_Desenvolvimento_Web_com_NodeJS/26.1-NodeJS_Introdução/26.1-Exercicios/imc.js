@@ -23,3 +23,5 @@ const userPeso = questionFloat("Qual seu peso?");
 const userAltura = questionFloat("Qual sua altura?");
 
 console.log(calcIMC(userPeso, userAltura));
+
+module.exports = { calcIMC };

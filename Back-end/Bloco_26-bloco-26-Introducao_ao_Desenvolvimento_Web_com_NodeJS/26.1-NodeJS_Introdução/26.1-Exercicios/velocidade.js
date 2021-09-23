@@ -12,3 +12,5 @@ function velocidade(dist, tempo) {
 }
 
 console.log(velocidade(dist, tempo));
+
+module.exports =  { velocidade };
