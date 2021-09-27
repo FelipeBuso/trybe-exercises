@@ -1,6 +1,0 @@
-db.movies.find(
-  {
-    category: { $all: ["action", "adventure"] },
-    imdbRating: { $gt: 7 },
-  }
-);
