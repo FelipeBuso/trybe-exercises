@@ -41,4 +41,16 @@ describe('Chama a função e', () => {
       });
     });
   })
+
+  describe('não é um número', () => {
+    const retorno = testaNumero('letra');
+
+    it('ele solicita um número', () => {
+      expect(retorno).to.be.equal('o valor deve ser um número');
+    });
+
+    it('é uma string', () => {
+      expect(retorno).to.be.a('string');
+    });
+  });
 });
