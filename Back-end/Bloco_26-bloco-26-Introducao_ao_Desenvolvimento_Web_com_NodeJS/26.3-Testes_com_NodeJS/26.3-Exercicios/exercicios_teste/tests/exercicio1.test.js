@@ -1,9 +1,12 @@
 const { expect } = require('chai');
 
+const { testaNumero } = require('../testaNumero');
+
 describe('Chama a função e', () => {
   describe('o número é', () => {
     describe('maior que zero', () => {
       const retorno = testaNumero(2);
+      console.log(retorno);
   
       it('ele é positivo', () => {
         expect(retorno).to.be.equal('positivo');
