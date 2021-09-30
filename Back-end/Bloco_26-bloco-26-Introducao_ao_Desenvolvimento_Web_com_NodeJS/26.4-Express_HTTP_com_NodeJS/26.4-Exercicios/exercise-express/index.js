@@ -1,9 +1,17 @@
 const bodyParser = require('body-parser');
 const express = require('express');
+const fs = require('fs').promises
 
 const app = express();
 
 app.use(bodyParser.json());
+
+async function getSimpsons() {
+  const simpsons = await fs.readFile('./simpsons.json', 'utf-8');
+  const readSimpsons = JSON.parse(simpsons);
+
+  return readSimpsons;
+}
 
 app.get('/ping', (req, res) => {
   res.status(200).json({ message: 'pong' });
@@ -29,5 +37,13 @@ app.put('/users/:name/:age', (req, res) => {
   res.status(200).json({ message: `Seu nome é ${name} e tem ${age} anos de idade`});
 
 });
+
+app.get('/simpsons', async (req, res) => {
+  const simpsons = await getSimpsons()
+
+  if (!simpsons) return res.status(500).json('Internal Server Error')
+  
+  res.status(200).json(simpsons);
+})
 
 app.listen(3000, () => console.log('Aplicação ouvindo porta 3000'));
