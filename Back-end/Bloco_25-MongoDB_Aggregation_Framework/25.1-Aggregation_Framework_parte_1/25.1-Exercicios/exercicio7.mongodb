@@ -1,0 +1,12 @@
+db.clientes.aggregate([
+  {
+    $group: {
+      _id: {
+        estado: "$endereco.uf",
+        sexo: "$sexo",
+      },
+      total: { $sum: 1 }
+    }
+  },
+  { $sort: { "_id.uf": 1 } },
+]);

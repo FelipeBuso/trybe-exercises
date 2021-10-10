@@ -1,0 +1,14 @@
+db.clientes.aggregate([
+  { $match: { 
+      sexo: "FEMININO"
+    },
+  },
+  { $project: {
+      _id: 0,
+      nome: 1,
+      sexo: 1,
+      year: { $year: "$dataNascimento" },
+    }
+  },
+  { $match: { year: { $gte: 1995, $lte: 2005 } } },
+]);
