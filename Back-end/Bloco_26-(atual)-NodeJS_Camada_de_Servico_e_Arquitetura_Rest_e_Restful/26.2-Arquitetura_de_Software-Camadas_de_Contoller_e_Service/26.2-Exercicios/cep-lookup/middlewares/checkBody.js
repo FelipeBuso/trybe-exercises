@@ -11,7 +11,6 @@ const checkBody = (req, res, next) => {
     uf: Joi.string().min(2).max(2).required()
   })
   const { error, result } = schema.validate(data);
-  console.log(result)
   if(error) return res.status(400).json({ "error": { "code": "invalidData", "message": `${error.message}` } })
 
   next()

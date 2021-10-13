@@ -1,10 +1,10 @@
-const { cepCheck, formatCEP, createNewCEP } = require('../services/cepServices');
+const { cepCheck, formatCEP, createNewCEP, existsCEP } = require('../services/cepServices');
 const { getAll, lookupCEP } = require('../models/cepModel');
 
 const getCEP = async (req, res) => {
   const { cep } = req.params;
   const checkCEP = cepCheck(cep);
-  if(!checkCEP) return res.status(400).json({ error: { code: 'invalidData', message: 'CEP inválido' } });
+  if(checkCEP) return res.status(400).json({ error: { code: 'invalidData', message: 'CEP inválido' } });
 
   const newCEP = formatCEP(cep);
   
@@ -29,8 +29,15 @@ const getAllCEPs = async (_req, res) => {
 
 const createCEP = async (req, res) => {
   const { cep, logradouro, bairro, localidade, uf} = req.body;
-  const saveCEP = createNewCEP(cep, logradouro, bairro, localidade, uf);
-  console.log(saveCEP)
+  const saveCEP = await createNewCEP(cep, logradouro, bairro, localidade, uf);
+  if(saveCEP) return res.status(409).json({  "error": { "code": "alreadyExists", "message": "CEP já existente" } });
+  res.status(200).json({
+    cep,
+    logradouro,
+    bairro,
+    localidade,
+    uf,
+  });
 }
 
 module.exports = { getCEP, getAllCEPs, createCEP };
