@@ -12,7 +12,7 @@ const add = async (name, brand) => {
     return { id: result.insertId, name, brand };
   } catch (err) {
     console.error(err);
-    return process.exit(1);
+    return false
   }
 };
 
@@ -22,7 +22,7 @@ const getAll = async () => {
     return rows;
   } catch (err) {
     console.error(err);
-    return process.exit(1);
+    return false;
   }
 };
 
@@ -33,7 +33,7 @@ const getById = async (id) => {
     return result[0];
   } catch (err) {
     console.error(err);
-    return process.exit(1);
+    return false;
   }
 };
 
@@ -42,7 +42,7 @@ const update = async (id, name, brand) => {
     await connection.query('UPDATE products SET name = ?, brand = ? WHERE id = ?', [name, brand, id])
   } catch (err) {
     console.error(err);
-    return process.exit(1);
+    return false;
   }
 };
 
@@ -54,7 +54,7 @@ const exclude = async (id) => {
     return product;
   } catch (err) {
     console.error(err);
-    return process.exit(1);
+    return false;
   }
 };
 
