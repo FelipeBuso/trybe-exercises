@@ -24,9 +24,17 @@ const updateBookById = async (req, res) => {
   res.status(result.code).json(result.result)
 }
 
+const excludeBookById = async (req, res) => {
+  const { id } = req.params;
+  const result = await BookService.excludeBookById(id);
+  console.log(result)
+  res.status(result.code).json(result.result)
+}
+
 module.exports = {
   findAllBooks,
   findBookById,
   createBook,
   updateBookById,
+  excludeBookById
 }

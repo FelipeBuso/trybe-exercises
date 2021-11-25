@@ -29,7 +29,7 @@ const createBook = async (title, author, pageQuantity) => {
     const bookCreated = await Book.create({
      title, author, pageQuantity, createdAt: dateNow
     });
-    return { code: 200, result: bookCreated }
+    return { code: 201, result: bookCreated }
   } catch (error) {
     return ({ code: 500, result: { message: 'Algo deu errado' } });
   };
@@ -47,10 +47,22 @@ const updateBookById = async (id, book) => {
   };
 }
 
+const excludeBookById = async (id) => {
+  try {
+    const bookUpdated = await Book.destroy(
+      { where: { id } }
+    );
+    return { code: 204, result: { message: "Livro deletado do banco de dados"} }
+  } catch (error) {
+    return ({ code: 500, result: { message: 'Algo deu errado' } });
+  };
+}
+
 module.exports = {
   findAllBooks,
   findBookById,
   createBook,
   updateBookById,
+  excludeBookById
 }
 
