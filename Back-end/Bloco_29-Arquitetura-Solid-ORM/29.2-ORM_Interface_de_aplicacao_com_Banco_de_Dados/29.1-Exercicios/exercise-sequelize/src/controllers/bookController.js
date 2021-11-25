@@ -11,7 +11,14 @@ const findBookById = async (req, res) => {
   res.status(result.code).json(result.result)
 };
 
+const createBook = async (req, res) => {
+  const { title, author, pageQuantity } = req.body;
+  const result = await BookService.createBook(title, author, pageQuantity);
+  res.status(result.code).json(result.result)
+}
+
 module.exports = {
   findAllBooks,
   findBookById,
+  createBook,
 }

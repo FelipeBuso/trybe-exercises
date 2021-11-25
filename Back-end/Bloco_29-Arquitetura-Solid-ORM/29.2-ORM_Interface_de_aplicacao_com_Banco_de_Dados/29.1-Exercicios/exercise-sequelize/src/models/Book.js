@@ -4,7 +4,13 @@ const Book = (sequelize, DataTypes) => {
     author: DataTypes.STRING,
     pageQuantity: DataTypes.INTEGER,
     createdAt: DataTypes.DATE,
-  });
+  },
+  {
+    timestamps: false,
+    underscored: true,
+    tableName: 'Books'
+  }
+  );
 
   return Book;
 };

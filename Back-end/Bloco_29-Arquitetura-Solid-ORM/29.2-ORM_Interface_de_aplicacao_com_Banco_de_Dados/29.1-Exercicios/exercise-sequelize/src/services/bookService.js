@@ -2,9 +2,7 @@ const { Book } = require('../models');
 
 const findAllBooks = async () => {
   try {
-    const books = await Book.findAll({
-      attributes: ['id', 'author', 'page_quantity', 'created_at']
-    });
+    const books = await Book.findAll();
     return { code: 200, result: books}
   } catch (error) {
     return ({ code: 500, result: { message: 'Algo deu errado' } });
@@ -13,9 +11,7 @@ const findAllBooks = async () => {
 
 const findBookById = async (id) => { 
   try {
-    const bookById = await Book.findByPk(id, {
-      attributes: ['id', 'author', 'page_quantity', 'created_at'],
-    });
+    const bookById = await Book.findByPk(id);
     console.log(bookById)
     if (bookById === null) {
       return { code: 204, result: { message: 'Livro não encontrado' } };
@@ -27,8 +23,21 @@ const findBookById = async (id) => {
   }
 }
 
+const createBook = async (title, author, pageQuantity) => {
+  const dateNow = new Date();
+  try {
+    const bookCreated = await Book.create({
+     title, author, pageQuantity, createdAt: dateNow
+    });
+    return { code: 200, result: bookCreated }
+  } catch (error) {
+    return ({ code: 500, result: { message: 'Algo deu errado' } });
+  };
+}
+
 module.exports = {
   findAllBooks,
   findBookById,
+  createBook,
 }
 
