@@ -35,9 +35,22 @@ const createBook = async (title, author, pageQuantity) => {
   };
 }
 
+const updateBookById = async (id, book) => {
+  try {
+    const bookUpdated = await Book.update(
+      { ...book },
+      { where: { id } }
+    );
+    return { code: 200, result: { id, ...book} }
+  } catch (error) {
+    return ({ code: 500, result: { message: 'Algo deu errado' } });
+  };
+}
+
 module.exports = {
   findAllBooks,
   findBookById,
   createBook,
+  updateBookById,
 }
 
