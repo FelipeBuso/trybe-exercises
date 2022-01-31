@@ -1,23 +1,25 @@
-from abc import abstractmethod
-
-
-class Player:
+class Soldier:
     def __init__(self, level):
         self.level = level
 
-    @abstractmethod
-    def atack(self):
-        raise NotImplementedError
-
-
-class Soldier(Player):
     def attack(self):
         return self.level * 1
 
 
-class Jedi(Player):
-    def attack(self):
+class Jedi:
+    def __init__(self, level):
+        self.level = level
+
+    def attackWithSaber(self):
         return self.level * 100
+
+
+class JediAdapter:
+    def __init__(self, jedi):
+        self.jedi = jedi
+
+    def attack(self):
+        return self.jedi.attackWithSaber()
 
 
 class StarWarsGame:
@@ -29,4 +31,4 @@ class StarWarsGame:
 
 
 StarWarsGame(Soldier(5)).fight_enemy()
-StarWarsGame(Jedi(20)).fight_enemy()
+StarWarsGame(JediAdapter(Jedi(20))).fight_enemy()
