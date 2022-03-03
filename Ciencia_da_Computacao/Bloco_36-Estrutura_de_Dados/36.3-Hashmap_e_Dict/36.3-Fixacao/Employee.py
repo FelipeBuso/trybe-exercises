@@ -31,10 +31,10 @@ class Hashmap:
 if __name__ == "__main__":
 
   employees = [(14, "name1"), (23, "name2"), (10, "name3"), (9, "name4")]
-  registry = Hashmap()
+  add_employee = Hashmap()
 
   for id_num, name in employees:
     employee = Employee(id_num, name)
-    registry.insert(employee)
+    add_employee.insert(employee)
   
   print(registry.get_value(23))
