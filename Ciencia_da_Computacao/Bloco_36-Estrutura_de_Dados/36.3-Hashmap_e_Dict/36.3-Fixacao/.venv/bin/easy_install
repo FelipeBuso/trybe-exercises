@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' /home/felipe/Trybe/trybe-exercises/Ciencia_da_Computacao/Bloco_36-Estrutura_de_Dados/36.3-Hashmap_e_Dict/36.3-Fixacao/.venv/bin/python3 "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from setuptools.command.easy_install import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
